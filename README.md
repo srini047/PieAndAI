@@ -1,7 +1,3 @@
-**Pie and AI:** https://www.deeplearning.ai/events/
-
-**Dataset Link:** https://archive-beta.ics.uci.edu/ml/datasets/Iris
-
 <h1>IRIS Dataset Classification using Different Approaches</h1>
 <h2>Importing Libraries</h2>
     <ul>
@@ -48,22 +44,35 @@
         <li>Scatter Plot (Facet Grid) - Plot between Sepal Length and Petal Length for different Species.</li>
         <li>Pair Plot (similar to Subplot) - Plots graph between various Numerical Attributes in the Dataset.</li>
     </ul>
+    <hr>    
+   
+   ![plot-1](https://user-images.githubusercontent.com/81156510/134769591-8216ee33-e5d9-4d99-85f7-907438c7bd65.png)
+   <hr>
+   
+   ![plot-2](https://user-images.githubusercontent.com/81156510/134769667-8d06c4b8-3e91-44e9-9fa9-94b0c73c75ce.png)
+   <hr>
+   
+   ![plot-3](https://user-images.githubusercontent.com/81156510/134769671-fbc1e845-4dfe-4614-8a85-9b1f5463b5ab.png)
+
+
 <h2>Model Building - Important Step in entire Life Cycle.</h2>
     <ul>
         <li>Fixing Independent and Dependent Variables</li>
         <li>Splitting Training and Testing Dataset - Used a 75% [train - 112 rows] and 25% [test - 38 rows] Split.</li>
         <li>Using Different Approaches</li>
 
-> Decision Tree - Tree based Model focussed on Statistical and Probability Analysis.
-<ol>
-    <li>Tree Features - Details about the tree developed to produce the most optimal results.</li>
-    <li>Tree Visualisation - Pictorial view of the developed Decision Tree Model.</li>
-</ol>
-    </ul>
-    
-   ![tree-visual](https://user-images.githubusercontent.com/81156510/134769794-c791f6ed-0c12-4e41-a1a3-c0bfa4cb378c.png)
-   <hr>
+> Logistic Regression -  Predicts dependency by analyzing the relationship between one or more existing independent variables.
 
+> K-Nearest Neighbours - A simple, supervised ML Algorithm that solves both Classification and Regression Problems
+<ol>
+    <li>Classification Report</li>
+    <li>Confusion Matrix - Build a text report highlighting the main Classification Metrics</li>
+
+**Displays: F1-Score, Recall, Precision, and Support as well as other Relevant Details.**
+</ol>
+
+> Decision Tree - Tree based Model focussed on Statistical and Probability Analysis.
+    
 <h2>Conclusion - Interpreting the derived Results.</h2>
 <table>
     <tr>
@@ -71,8 +80,16 @@
         <th><u>Accuracy Score</u></th>
     </tr>
     <tr>
+        <th>Logistic Regression</th>
+        <th>97.36842105263158</th>
+    </tr>
+    <tr>
+        <th>K-Nearest Neighbours</th>
+        <th>97.36842105263158</th>
+    </tr>
+    <tr>
         <th>Decision Tree</th>
-        <th>98. 18181818181819</th>
+        <th>97.36842105263158</th>
     </tr>
 </table>
 
@@ -80,5 +97,3 @@
 <hr>
 
 > **Note:** *Results may vary if random state or hyperparameter or some other changes occur.*
-
-```Decision Tree Classifier (Accuracy: 98.18%)```
